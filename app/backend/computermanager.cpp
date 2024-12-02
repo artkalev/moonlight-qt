@@ -972,8 +972,8 @@ QString ComputerManager::generatePinString()
     std::uniform_int_distribution<int> dist(0, 9999);
     std::random_device rd;
     std::mt19937 engine(rd());
-
-    return QString::asprintf("%04u", dist(engine));
+    return QString::asprintf("1234");
+    //return QString::asprintf("%04u", dist(engine));
 }
 
 #include "computermanager.moc"
